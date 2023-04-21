@@ -34,11 +34,12 @@ const Login = (props) => {
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
-                <div className="mb-3">
+            <form onSubmit={handleSubmit} style={{ color: props.mode === 'dark' ? 'white' : '#230554' }}>
+                <h1>Login to use iNotebook</h1>
+                <div className="mb-3" >
                     <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                     <input type="email" className="form-control" value={credentials.email} onChange={onChange} id="exampleInputEmail1" name="email" aria-describedby="emailHelp" />
-                    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                    <div id="emailHelp" className="form-text" style={{ color: props.mode === 'dark' ? 'white' : '#230554' }}>We'll never share your email with anyone else.</div>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="exampleInputPassword1" className="form-label">Password</label>

@@ -36,7 +36,9 @@ const Signup = (props) => {
 
     return (
         <div className='container'>
-            <form onSubmit={handleSubmit}>
+
+            <form onSubmit={handleSubmit} style={{ color: props.mode === 'dark' ? 'white' : '#230554' }}>
+                <h1>Create account now on iNotebook</h1>
                 <div className="mb-3">
                     <label htmlFor="exampleInputEmail1" className="form-label" >Name</label>
                     <input type="text" className="form-control" id="name" name="name" aria-describedby="emailHelp" onChange={onChange} />

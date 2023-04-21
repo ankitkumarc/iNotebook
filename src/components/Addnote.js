@@ -17,7 +17,7 @@ const Addnote = (props) => {
 
 
     return (
-        <div className='container my-3'>
+        <div className='container my-3' style={{ color: props.mode === 'dark' ? 'white' : '#230554' }}>
             <h1>This is Home</h1>
             <form className="container my-3">
                 <div className="mb-3">
